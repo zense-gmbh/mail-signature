@@ -33,10 +33,9 @@ jobs:
       - name: Prepare Pages artifact
         run: |
           mkdir -p _site/assets _site/signatures
-          cp -r output/*.html _site/signatures/
-          cp -r assets/* _site/assets/
-          cp signature-template.html _site/
-          cp preview.html _site/
+          cp -r signatures/*.html _site/signatures/
+          cp -r assets/* _site/assets/ 2>/dev/null || true
+          echo '<meta http-equiv="refresh" content="0;url=signatures/">' > _site/index.html
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

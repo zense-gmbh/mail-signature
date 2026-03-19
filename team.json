@@ -1,14 +1,141 @@
 [
   {
-    "id": "janick",
-    "name": "Janick Lehmann",
-    "role": "CEO & Strategy",
-    "phone": "+41 44 521 73 90"
+    "id": "sven",
+    "name": "Sven Langone",
+    "role": "Creative",
+    "email": "s.langone@zense.ch",
+    "phone": "+41 79 383 67 66"
+  },
+  {
+    "id": "madleina",
+    "name": "Madleina Dörig",
+    "role": "Creative",
+    "email": "m.doerig@zense.ch",
+    "phone": "+41 76 544 03 59"
+  },
+  {
+    "id": "aleksandar",
+    "name": "Aleksandar Dumic",
+    "role": "Creative",
+    "email": "a.dumic@zense.ch",
+    "phone": "+387 66 241 887"
+  },
+  {
+    "id": "yves",
+    "name": "Yves Erne",
+    "role": "Co-CEO, Partner",
+    "email": "y.erne@zense.ch",
+    "phone": "+41 79 246 67 60"
+  },
+  {
+    "id": "christof",
+    "name": "Christof Gähwiler",
+    "role": "Creative, Founding Partner",
+    "email": "c.gaehwiler@zense.ch",
+    "phone": "+41 78 775 77 20"
+  },
+  {
+    "id": "andri",
+    "name": "Andri Hinnen",
+    "role": "Co-CEO, Founding Partner",
+    "email": "a.hinnen@zense.ch",
+    "phone": "+41 78 819 38 10"
+  },
+  {
+    "id": "eleanna",
+    "name": "Eleanna Zarn",
+    "role": "COO, Partner",
+    "email": "e.zarn@zense.ch",
+    "phone": "+41 78 940 41 57"
   },
   {
     "id": "nadja",
     "name": "Nadja Wegmüller",
-    "role": "COO (Organization) & CFO",
-    "phone": "+41 76 533 2119"
+    "role": "CFO, CHRO, Partner",
+    "email": "n.wegmueller@zense.ch",
+    "phone": "+41 76 533 21 19"
+  },
+  {
+    "id": "alexander",
+    "name": "Alexander Wucherer",
+    "role": "Creative, Partner",
+    "email": "a.wucherer@zense.ch",
+    "phone": "+49 176 6958 1081"
+  },
+  {
+    "id": "marion",
+    "name": "Marion Deichmann",
+    "role": "Creative",
+    "email": "m.deichmann@zense.ch",
+    "phone": "+41 79 454 52 02"
+  },
+  {
+    "id": "sebastian",
+    "name": "Sebastian Probst-Lübeck",
+    "role": "Station Chief Berlin",
+    "email": "s.probst-luebeck@zense.ch",
+    "phone": "+49 176 11370110"
+  },
+  {
+    "id": "sasha",
+    "name": "Sasha Müller",
+    "role": "Account Manager",
+    "email": "s.mueller@zense.ch",
+    "phone": "+41 76 476 14 01"
+  },
+  {
+    "id": "janine",
+    "name": "Janine Khayati",
+    "role": "Senior Account Manager",
+    "email": "j.khayati@zense.ch",
+    "phone": "+49 163 7966979"
+  },
+  {
+    "id": "isabelle",
+    "name": "Isabelle Anzuck",
+    "role": "Account Manager",
+    "email": "i.anzuck@zense.ch",
+    "phone": "+49 170 1220899"
+  },
+  {
+    "id": "noemie",
+    "name": "Noémie Clemons",
+    "role": "Account Manager",
+    "email": "n.clemons@zense.ch",
+    "phone": "+41 76 280 30 93"
+  },
+  {
+    "id": "alexandra",
+    "name": "Alexandra Ruppert",
+    "role": "Creative",
+    "email": "a.ruppert@zense.ch",
+    "phone": "+49 163 4759588"
+  },
+  {
+    "id": "dimitri",
+    "name": "Dimitri Pfeifer",
+    "role": "Creative",
+    "email": "d.pfeifer@zense.ch"
+  },
+  {
+    "id": "ellen",
+    "name": "Ellen Vanmarcke",
+    "role": "Creative",
+    "email": "e.vanmarcke@zense.ch",
+    "phone": "+41 76 748 55 01"
+  },
+  {
+    "id": "celine",
+    "name": "Céline Gianduzzo",
+    "role": "Account Manager",
+    "email": "c.gianduzzo@zense.ch",
+    "phone": "+41 78 901 31 60"
+  },
+  {
+    "id": "janick",
+    "name": "Janick Rolli",
+    "role": "Growth Manager",
+    "email": "j.rolli@zense.ch",
+    "phone": "+41 44 521 73 90"
   }
 ]
