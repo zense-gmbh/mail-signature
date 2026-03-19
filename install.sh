@@ -47,6 +47,23 @@ echo "OK"
 # Find Apple Mail Signatures directory
 MAIL_BASE="${HOME}/Library/Mail"
 SIG_DIR=""
+
+# Check Full Disk Access first
+if [ -d "${MAIL_BASE}" ] && ! ls "${MAIL_BASE}" > /dev/null 2>&1; then
+  echo ""
+  echo "FEHLER: Terminal hat keinen Zugriff auf den Mail-Ordner."
+  echo ""
+  echo "macOS blockiert den Zugriff. Bitte erteile dem Terminal Festplattenvollzugriff:"
+  echo ""
+  echo "  1. Systemeinstellungen oeffnen (wird gleich automatisch geoeffnet)"
+  echo "  2. Links 'Terminal' suchen und aktivieren"
+  echo "  3. Terminal neu starten"
+  echo "  4. Dieses Script erneut ausfuehren"
+  echo ""
+  open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"
+  exit 1
+fi
+
 for vdir in $(ls -rd "${MAIL_BASE}"/V* 2>/dev/null); do
   candidate="${vdir}/MailData/Signatures"
   if [ -d "$candidate" ]; then
