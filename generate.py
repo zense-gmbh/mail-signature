@@ -24,6 +24,20 @@ SIGNATURES_DIR = SCRIPT_DIR / "signatures"
 
 DEFAULT_PHONE = "+41 44 521 73 90"
 
+OFFICES = {
+    "zurich": {
+        "company": "Zense GmbH",
+        "street": "Badenerstr. 75",
+        "city": "CH-8004 Zürich",
+    },
+    "berlin": {
+        "company": "Zense Berlin GmbH",
+        "street": "Mahlower Str. 23-24",
+        "city": "DE-12049 Berlin",
+    },
+}
+DEFAULT_OFFICE = "zurich"
+
 
 def load_team():
     with open(TEAM_PATH, "r", encoding="utf-8") as f:
@@ -36,11 +50,15 @@ def load_template():
 
 
 def generate_signature(template, member):
+    office = OFFICES.get(member.get("office", DEFAULT_OFFICE), OFFICES[DEFAULT_OFFICE])
     html = template
     html = html.replace("{{NAME}}", member["name"])
     html = html.replace("{{ROLE}}", member["role"])
     html = html.replace("{{PHONE}}", member.get("phone") or DEFAULT_PHONE)
     html = html.replace("{{EMAIL}}", member.get("email", ""))
+    html = html.replace("{{COMPANY}}", office["company"])
+    html = html.replace("{{STREET}}", office["street"])
+    html = html.replace("{{CITY}}", office["city"])
     return html
 
 

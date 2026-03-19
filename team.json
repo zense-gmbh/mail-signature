@@ -74,7 +74,8 @@
     "name": "Sebastian Probst-Lübeck",
     "role": "Station Chief Berlin",
     "email": "s.probst-luebeck@zense.ch",
-    "phone": "+49 176 11370110"
+    "phone": "+49 176 11370110",
+    "office": "berlin"
   },
   {
     "id": "sasha",
@@ -88,7 +89,8 @@
     "name": "Janine Khayati",
     "role": "Senior Account Manager",
     "email": "j.khayati@zense.ch",
-    "phone": "+49 163 7966979"
+    "phone": "+49 163 7966979",
+    "office": "berlin"
   },
   {
     "id": "isabelle",
@@ -109,7 +111,8 @@
     "name": "Alexandra Ruppert",
     "role": "Creative",
     "email": "a.ruppert@zense.ch",
-    "phone": "+49 163 4759588"
+    "phone": "+49 163 4759588",
+    "office": "berlin"
   },
   {
     "id": "dimitri",
