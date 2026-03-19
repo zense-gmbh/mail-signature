@@ -47,7 +47,7 @@ echo "OK"
 # Find Apple Mail Signatures directory
 MAIL_BASE="${HOME}/Library/Mail"
 SIG_DIR=""
-for vdir in $(ls -d "${MAIL_BASE}"/V* 2>/dev/null | sort -rV); do
+for vdir in $(ls -rd "${MAIL_BASE}"/V* 2>/dev/null); do
   candidate="${vdir}/MailData/Signatures"
   if [ -d "$candidate" ]; then
     SIG_DIR="$candidate"
