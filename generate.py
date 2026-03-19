@@ -42,11 +42,14 @@ def load_template():
         return f.read()
 
 
+DEFAULT_PHONE = "+41 44 521 73 90"
+
+
 def generate_signature(template, member):
     html = template
     html = html.replace("{{NAME}}", member["name"])
     html = html.replace("{{ROLE}}", member["role"])
-    html = html.replace("{{PHONE}}", member["phone"])
+    html = html.replace("{{PHONE}}", member.get("phone") or DEFAULT_PHONE)
     return html
 
 
