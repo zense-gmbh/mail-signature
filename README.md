@@ -1,48 +1,63 @@
 # Zense Mail Signature
 
-Zentral gehostete E-Mail-Signatur für das Zense-Team.
+Zentral gehostete E-Mail-Signatur fur das Zense-Team. Eine Signatur, automatisch personalisiert.
 
-## Wie es funktioniert
+## So funktioniert es
 
-1. **Template** (`signature-template.html`) - Die HTML-Signatur mit Platzhaltern
-2. **Team** (`team.json`) - Personalisierte Daten pro Teammitglied
-3. **Assets** (`assets/`) - Logo und Icons, gehostet via GitHub Pages
-4. **Generator** (`generate.py`) - Erzeugt personalisierte Signaturen
+1. **Ein Template** (`signature-template.html`) mit Platzhaltern `{{NAME}}`, `{{ROLE}}`, `{{PHONE}}`
+2. **Team-Daten** (`team.json`) mit personalisierten Infos pro Person
+3. **GitHub Action** generiert bei jedem Push automatisch alle Signaturen
+4. **GitHub Pages** hostet die fertigen Signaturen + Assets (Logo, Icons)
 
-## Signatur generieren
+## Signatur installieren (einmalig)
 
+Jedes Teammitglied macht das einmal:
+
+### Vorbereitung
+1. Apple Mail offnen > Einstellungen > Signaturen
+2. Neue Signatur erstellen mit dem Text `PLACEHOLDER`
+3. Apple Mail schliessen (Cmd+Q)
+
+### Installation
 ```bash
-# Alle Signaturen generieren
-python3 generate.py
-
-# Nur für eine Person
-python3 generate.py janick
-
-# Generieren und direkt in Apple Mail installieren
-python3 generate.py janick --install
+curl -sL https://zense-gmbh.github.io/mail-signature/install.sh | bash -s DEINE_ID
 ```
 
-## Erstmalige Einrichtung (Apple Mail)
+Beispiel:
+```bash
+curl -sL https://zense-gmbh.github.io/mail-signature/install.sh | bash -s janick
+```
 
-1. Öffne Apple Mail > Einstellungen > Signaturen
-2. Erstelle eine neue Signatur mit dem Text `PLACEHOLDER`
-3. Schliesse Apple Mail (Cmd+Q)
-4. Führe aus: `python3 generate.py DEIN_ID --install`
-5. Öffne Apple Mail - die Signatur ist aktiv
+Fertig. Apple Mail offnen - Signatur ist aktiv.
 
-## Änderungen vornehmen
+## Signatur andern
 
-Wenn sich etwas an der Signatur ändern soll (Banner, Layout, Icons):
+Wenn sich etwas andern soll (Banner, Layout, Farben, Icons):
 
-1. Änderung in `signature-template.html` oder `assets/` vornehmen
-2. Push zu GitHub
-3. **Bilder/Assets**: Werden automatisch aktualisiert (via GitHub Pages URL)
-4. **HTML-Struktur**: `python3 generate.py --install` erneut ausführen
+1. Template oder Assets andern und pushen
+2. GitHub Action generiert automatisch alle neuen Signaturen
+3. **Bilder/Assets**: Andern sich sofort in allen Mails (via GitHub Pages URL)
+4. **HTML/Text**: Jede Person fuhrt einmal den Install-Befehl aus
 
-## Assets aktualisieren
+## Neue Person hinzufugen
 
-Bilder werden von GitHub Pages geladen:
-`https://zense-gmbh.github.io/mail-signature/assets/`
+In `team.json` einen Eintrag erganzen:
 
-Wenn du ein Asset (z.B. Logo) austauschst und pushst, wird es automatisch
-in allen bestehenden Signaturen aktualisiert.
+```json
+{
+  "id": "vorname",
+  "name": "Vorname Nachname",
+  "role": "Rolle"
+}
+```
+
+Ohne `phone` wird automatisch die Buronummer +41 44 521 73 90 verwendet.
+
+## Lokal testen
+
+```bash
+python3 generate.py           # Alle Signaturen generieren
+python3 generate.py janick    # Nur eine Person
+```
+
+Die Signaturen landen in `output/`.
