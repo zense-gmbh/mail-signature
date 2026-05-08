@@ -80,14 +80,14 @@
   {
     "id": "sasha",
     "name": "Sasha Müller",
-    "role": "Account Manager",
+    "role": "Consultant & Account Manager",
     "email": "s.mueller@zense.ch",
     "phone": "+41 76 476 14 01"
   },
   {
     "id": "janine",
     "name": "Janine Khayati",
-    "role": "Senior Account Manager",
+    "role": "Senior Consultant & Account Manager",
     "email": "j.khayati@zense.ch",
     "phone": "+49(0)30 244 97 85",
     "office": "berlin"
@@ -95,14 +95,14 @@
   {
     "id": "isabelle",
     "name": "Isabelle Anzuck",
-    "role": "Account Manager",
+    "role": "Consultant & Account Manager",
     "email": "i.anzuck@zense.ch",
     "phone": "+49 170 1220899"
   },
   {
     "id": "noemie",
     "name": "Noémie Clemons",
-    "role": "Account Manager",
+    "role": "Consultant & Account Manager",
     "email": "n.clemons@zense.ch",
     "phone": "+41 76 280 30 93"
   },
@@ -130,7 +130,7 @@
   {
     "id": "celine",
     "name": "Céline Gianduzzo",
-    "role": "Account Manager",
+    "role": "Consultant & Account Manager",
     "email": "c.gianduzzo@zense.ch",
     "phone": "+41 78 901 31 60"
   },
