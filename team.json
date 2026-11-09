@@ -14,13 +14,6 @@
     "phone": "+41 76 544 03 59"
   },
   {
-    "id": "aleksandar",
-    "name": "Aleksandar Dumic",
-    "role": "Creative",
-    "email": "a.dumic@zense.ch",
-    "phone": "+387 66 241 887"
-  },
-  {
     "id": "yves",
     "name": "Yves Erne",
     "role": "Co-CEO, Partner",
@@ -58,16 +51,9 @@
   {
     "id": "alexander",
     "name": "Alexander Wucherer",
-    "role": "Creative, Partner",
+    "role": "Art Director",
     "email": "a.wucherer@zense.ch",
     "phone": "+49 176 6958 1081"
-  },
-  {
-    "id": "marion",
-    "name": "Marion Deichmann",
-    "role": "Creative",
-    "email": "m.deichmann@zense.ch",
-    "phone": "+41 79 454 52 02"
   },
   {
     "id": "sebastian",
@@ -78,13 +64,6 @@
     "office": "berlin"
   },
   {
-    "id": "sasha",
-    "name": "Sasha Müller",
-    "role": "Consultant & Account Manager",
-    "email": "s.mueller@zense.ch",
-    "phone": "+41 76 476 14 01"
-  },
-  {
     "id": "janine",
     "name": "Janine Khayati",
     "role": "Senior Consultant & Account Manager",
@@ -93,39 +72,12 @@
     "office": "berlin"
   },
   {
-    "id": "isabelle",
-    "name": "Isabelle Anzuck",
-    "role": "Consultant & Account Manager",
-    "email": "i.anzuck@zense.ch",
-    "phone": "+49 170 1220899"
-  },
-  {
-    "id": "noemie",
-    "name": "Noémie Clemons",
-    "role": "Consultant & Account Manager",
-    "email": "n.clemons@zense.ch",
-    "phone": "+41 76 280 30 93"
-  },
-  {
     "id": "alexandra",
     "name": "Alexandra Ruppert",
     "role": "Creative",
     "email": "a.ruppert@zense.ch",
     "phone": "+49 163 4759588",
     "office": "berlin"
-  },
-  {
-    "id": "dimitri",
-    "name": "Dimitri Pfeifer",
-    "role": "Creative",
-    "email": "d.pfeifer@zense.ch"
-  },
-  {
-    "id": "ellen",
-    "name": "Ellen Vanmarcke",
-    "role": "Creative",
-    "email": "e.vanmarcke@zense.ch",
-    "phone": "+41 76 748 55 01"
   },
   {
     "id": "celine",
@@ -137,7 +89,7 @@
   {
     "id": "lara",
     "name": "Lara Engeli",
-    "role": "Trainee Account Management",
+    "role": "Consultant & Account Manager",
     "email": "l.engeli@zense.ch"
   }
 ]
